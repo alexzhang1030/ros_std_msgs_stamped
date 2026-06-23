@@ -53,5 +53,5 @@ jobs:
       - name: Test
         run: |
           source /opt/ros/${ROS_DISTRO}/setup.bash
-          colcon test --packages-select std_msgs_stamped
+          colcon test --merge-install --packages-select std_msgs_stamped
           colcon test-result --verbose
